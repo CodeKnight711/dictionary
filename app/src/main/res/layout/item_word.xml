@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zerobranch.layout.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="#ff5722"
+    app:draggedItem="@id/base_item"
+    app:rightItem="@id/right_view"
+    app:swipeDirection="left">
+
+    <ImageView
+        android:id="@+id/right_view"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="#ff5722"
+        android:gravity="center"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:src="@drawable/ic_fav_border" />
+
+    <FrameLayout
+        android:id="@+id/base_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#96A0D7">
+
+
+        <TextView
+            android:id="@+id/text_uzb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="14dp"
+            android:text="Uzbekcha"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginVertical="8dp"
+            android:background="@color/black" />
+
+
+        <TextView
+            android:id="@+id/text_eng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="14dp"
+            android:text="Inglizcha"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+
+</com.zerobranch.layout.SwipeLayout>
